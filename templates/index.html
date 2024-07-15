@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Scraper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Weather Scraper</h1>
+    <form action="{{ url_for('scrape') }}" method="post">
+        <!-- <label for="start_year">Start Year:</label>
+        <input type="number" id="start_year" name="start_year" required>
+        <label for="start_month">Start Month:</label>
+        <input type="number" id="start_month" name="start_month" required>
+        <label for="end_year">End Year:</label>
+        <input type="number" id="end_year" name="end_year" required>
+        <label for="end_month">End Month:</label>
+        <input type="number" id="end_month" name="end_month" required>
+        <button type="submit">Scrape Data</button> -->
+    </form>
+</body>
+</html>

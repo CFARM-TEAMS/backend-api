@@ -1,0 +1,13 @@
+Pastikan server telah berjalan dengan perintah "python app.py"
+1. Contoh pengujian API dengan Curl untuk scrape data cuaca = 
+
+curl -X POST http://localhost:5000/scrape -H "Content-Type: application/json" -d '{
+    "start_year": 2010,
+    "start_month": 1,
+    "end_year": 2023,
+    "end_month": 7
+}'
+
+2. Contoh pengujian API dengan Curl untuk scrap PRICE COMMODITY RICE GLOBAL =
+
+curl -X POST -H "Content-Type: application/json" -d '{"file_name": "PMAIZMTUSDM"}' http://127.0.0.1:5000/download_csv
